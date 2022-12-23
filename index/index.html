@@ -1,0 +1,75 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+
+    text-align: left;
+    font-weight: bold;
+    flex-flow: row wrap;
+    margin-left: 5px;
+    background-color: aqua;
+    text-align: left;
+  }
+  .content > article {
+    padding: 18px;
+    margin: 10px;
+    margin-bottom: -35px;
+    
+    
+
+  }
+  .aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+  	<header>Header - Sample Flex Box</header>
+    <main class="content">
+    <article><h2>First Article</h2></article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <article>
+        <h2>Second Article</h2>
+    </article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <article>
+         <h2>Third Article</h2>
+    </article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+    
+    </main>
+    <aside class="aside">Aside</aside>
+  	<footer>Footer</footer>
+  </div>
+</body>
